@@ -4,5 +4,10 @@ export default defineNuxtConfig({
 	modules: [
 		'@nuxt/image',
 		'@nuxtjs/tailwindcss',
-	]
+		'shadcn-nuxt',
+	],
+	shadcn: {
+    prefix: '',
+    componentDir: './components/ui'
+  }
 })
