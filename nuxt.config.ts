@@ -5,6 +5,7 @@ export default defineNuxtConfig({
 		'@nuxt/image',
 		'@nuxtjs/tailwindcss',
 		'shadcn-nuxt',
+		'nuxt-icon',
 		['@nuxtjs/color-mode', {
 			preference: 'dark',
 			classSuffix: '',

@@ -3,10 +3,9 @@
 		<NuxtLink to="/" class="mb-10 block">
 			<NuxtImg class="mx-auto" src="/logo.svg" width="100" height="100" alt="logo crm" />
 		</NuxtLink>
-
-		Color mode: {{ $colorMode.value }}
-
-		<UiButton>Test btn</UiButton>
+		<button class="absolute top-2 right-3 transition-colors hover:text-primary">
+			<Icon name="line-md:logout" size="1.6rem" />
+		</button>
 	</aside>
 </template>
 

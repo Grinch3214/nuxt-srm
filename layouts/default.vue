@@ -1,5 +1,5 @@
 <template>
-	<section class="grid grid-cols-[1fr_6fr]">
+	<section class="grid grid-cols-[1.2fr_6fr]">
 		<LayoutsSidebar />
 		<div>
 
