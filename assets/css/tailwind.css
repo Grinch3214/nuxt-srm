@@ -4,6 +4,8 @@
 
 @layer base {
 	:root {
+		--sidebar: rgb(43, 43, 43);
+
 		--background: #FFFFFF;
 		--foreground: #E5E5E5;
 
@@ -19,7 +21,7 @@
 		--border: #F3F3F3;
 		--input: #F3F3F3;
 
-		--primary: #1C1C1C;
+		--primary: #265fda;
 		--primary-foreground: #FAFAFA;
 
 		--secondary: #F8F8F8;
@@ -51,8 +53,8 @@
 		--border: #383838;
 		--input: #383838;
 
-		--primary: #FAFAFA;
-		--primary-foreground: #1C1C1C;
+		--primary: #265fda;
+		--primary-foreground: #FAFAFA;
 
 		--secondary: #383838;
 		--secondary-foreground: #FAFAFA;

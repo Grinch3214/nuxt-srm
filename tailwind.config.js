@@ -20,6 +20,7 @@ module.exports = {
     },
     extend: {
       colors: {
+				sidebar: "var(--sidebar)",
         border: "var(--border)",
         input: "var(--input)",
         ring: "var(--ring)",

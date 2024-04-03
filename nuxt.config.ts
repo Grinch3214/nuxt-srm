@@ -5,6 +5,10 @@ export default defineNuxtConfig({
 		'@nuxt/image',
 		'@nuxtjs/tailwindcss',
 		'shadcn-nuxt',
+		['@nuxtjs/color-mode', {
+			preference: 'dark',
+			classSuffix: '',
+		}],
 		['@nuxtjs/google-fonts', {
 			families: {
 				Lato: {
