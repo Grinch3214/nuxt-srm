@@ -24,15 +24,15 @@ module.exports = {
         border: "var(--border)",
         input: "var(--input)",
         ring: "var(--ring)",
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "rgba(var(--background) , <alpha-value>)",
+        foreground: "rgba(var(--foreground) , <alpha-value>)",
         primary: {
           DEFAULT: "var(--primary)",
           foreground: "var(--primary-foreground)",
         },
         secondary: {
-          DEFAULT: "var(--secondary)",
-          foreground: "var(--secondary-foreground)",
+          DEFAULT: "rgba(var(--secondary) , <alpha-value>)",
+          foreground: "rgba(var(--secondary-foreground) , <alpha-value>)",
         },
         destructive: {
           DEFAULT: "var(--destructive)",
