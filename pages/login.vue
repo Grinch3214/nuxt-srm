@@ -32,9 +32,16 @@
 </template>
 
 <script setup lang="ts">
+	import { useAuthStore } from '../store/auth'
+	
 	useHead({
 		title: 'Login | CRM System'
 	})
+
+	const authStore = useAuthStore()
+
+	console.log(authStore.user)
+	console.log(authStore.isAuth)
 
 	const email = ref('')
 	const password = ref('')

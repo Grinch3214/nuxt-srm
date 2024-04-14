@@ -6,6 +6,7 @@ export default defineNuxtConfig({
 		'@nuxtjs/tailwindcss',
 		'shadcn-nuxt',
 		'nuxt-icon',
+		'@pinia/nuxt',
 		['@nuxtjs/color-mode', {
 			preference: 'dark',
 			classSuffix: '',
@@ -22,5 +23,8 @@ export default defineNuxtConfig({
 	shadcn: {
     prefix: 'Ui',
     componentDir: './components/ui'
-  }
+  },
+	pinia: {
+		storeDirs: ['./store/**'],
+	},
 })
