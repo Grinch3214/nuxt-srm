@@ -20,6 +20,8 @@ export const useAuthStore = defineStore('auth', () => {
 			status: false
 	})
 
+	const isLoading = ref(true)
+
 	const isAuth = computed(() => user.status)
 
 	const clear = () => {
@@ -31,7 +33,8 @@ export const useAuthStore = defineStore('auth', () => {
 	return {
 		user,
 		isAuth,
-		clear
+		clear,
+		isLoading
 	}
 
 })
