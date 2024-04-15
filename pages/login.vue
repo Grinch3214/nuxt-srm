@@ -39,11 +39,11 @@
 	})
 
 	const authStore = useAuthStore()
-
-	console.log(authStore.user)
-	console.log(authStore.isAuth)
+	const router = useRouter()
 
 	const email = ref('')
 	const password = ref('')
 	const name = ref('')
+
+	console.log(authStore.isLoading)
 </script>
