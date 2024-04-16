@@ -45,5 +45,25 @@
 	const password = ref('')
 	const name = ref('')
 
+	const login = async() => {
+		authStore.isLoading = true
+		await account.createEmailPasswordSession(email.value, password.value)
+		const response = await account.get()
+		if(response) {
+			authStore.user.email = response.email,
+			authStore.user.name = response.name,
+			authStore.user.status = response.status
+		}
+
+		email.value = ''
+		password.value = ''
+		name.value = ''
+
+		await router.push('/')
+		authStore.isLoading = false
+	}
+
+	// TODO: add register
+
 	console.log(authStore.isLoading)
 </script>
